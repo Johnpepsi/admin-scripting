@@ -1,4 +1,4 @@
-# Define the path to the OST file location
+# Define the path to the OWN OST file SIZE location
 # This is how to check own OST file
 $ostFilePath = "$env:LOCALAPPDATA\Microsoft\Outlook"
 
