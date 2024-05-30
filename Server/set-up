@@ -1,0 +1,8 @@
+## Setting up an Remote Desktop Connection (RDP)
+
+Suggestions: 
+- Buy a raspberry pi or something, install linux with openvpn or similar on it and you cav vpn into it after opening https to the pi. 
+  There are many howtos online. Easy and secure, you can even add two factor authentication (recommend).
+  RDP has many flaws and can be broken into.
+
+-use a PiVppn (openVPN)
