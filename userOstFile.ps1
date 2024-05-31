@@ -1,4 +1,4 @@
-# How to check users ost file SIZE using own machine
+# How to check users ost file SIZE using own machine, connect to user machine and run
 # List of user profile directories
 $userProfiles = Get-WmiObject Win32_UserProfile | Where-Object { $_.Special != $true -and $_.LocalPath -match "C:\\Users" }
 
