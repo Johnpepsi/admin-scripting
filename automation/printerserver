@@ -1,0 +1,16 @@
+# Prompt the user for the network printer's name
+$printerName = Read-Host "Enter the network printer name (e.g., \\server\printer)"
+
+# Check if the printer name is valid
+if (-not $printerName) {
+    Write-Host "Printer name cannot be empty."
+    exit
+}
+
+# Attempt to add the network printer
+try {
+    Add-Printer -ConnectionName $printerName
+    Write-Host "Printer added successfully."
+} catch {
+    Write-Host "Failed to add printer. Please check the printer name and try again."
+}
