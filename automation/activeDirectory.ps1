@@ -1,7 +1,7 @@
 # Variables
 $UserFirstName = "John"
 $UserLastName = "Dodee"
-$UserName = "jdoe"
+$UserName = "jdoedede"
 $UserPassword = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 $OU = "OU=Users,DC=example,DC=com"
 
