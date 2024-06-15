@@ -1,4 +1,4 @@
-How to Disable account/bulk from AD: (make sure in the admin server)
+## How to Disable account/bulk from AD: (make sure in the admin server)
 # Import the Active Directory module
 Import-Module ActiveDirectory
 
