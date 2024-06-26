@@ -1,16 +1,21 @@
-# Prompt the user for the network printer's name
-$printerName = Read-Host "Enter the network printer name (e.g., \\server\printer)"
+# Define the URL or network path to the printer driver
+$driverUrl = "http://example.com/printer-driver.exe"
+$driverPath = "C:\Temp\printer-driver.exe"
 
-# Check if the printer name is valid
-if (-not $printerName) {
-    Write-Host "Printer name cannot be empty."
-    exit
-}
+# Define the printer details
+$printerName = "My Network Printer"
+$printerPort = "192.168.1.100"
 
-# Attempt to add the network printer
-try {
-    Add-Printer -ConnectionName $printerName
-    Write-Host "Printer added successfully."
-} catch {
-    Write-Host "Failed to add printer. Please check the printer name and try again."
-}
+# Download the printer driver
+Invoke-WebRequest -Uri $driverUrl -OutFile $driverPath
+
+# Install the printer driver
+Start-Process -FilePath $driverPath -ArgumentList "/S" -Wait
+
+# Add the printer port
+Add-PrinterPort -Name "IP_$printerPort" -PrinterHostAddress $printerPort
+
+# Add the printer
+Add-Printer -Name $printerName -DriverName "Your Printer Driver Name" -PortName "IP_$printerPort"
+
+Write-Output "Printer installation completed successfully."
