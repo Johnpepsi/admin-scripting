@@ -25,3 +25,6 @@ Set DNS Server (Optional):
 powershell
 Copy code
 netsh interface ip set dns name="Ethernet" static 8.8.8.8
+
+--> For more clearer version please sign in to chat gpt as Milagros apparel and check "how do I to set an IP address on a NIC manually". 
+-> It should give you more option how to do it on powershell and linux
