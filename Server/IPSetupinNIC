@@ -1,3 +1,27 @@
 ## Setting an IP address on a Network Interface Card (NIC) manually can be done using either the graphical interface or command-line tools. 
 # Here’s how you can do it on Windows, Linux, and macOS:
 
+## Windows Operating System Using GUI:
+
+Open Network Connections:
+Press Windows + R, type ncpa.cpl, and press Enter.
+Select the Network Adapter:
+Right-click on the network adapter you want to configure and select "Properties".
+Select Internet Protocol Version:
+Select "Internet Protocol Version 4 (TCP/IPv4)" and click "Properties".
+Set IP Address:
+Select "Use the following IP address" and enter the IP address, Subnet mask, and Default gateway.
+Optionally, enter DNS server addresses.
+Confirm Changes:
+Click "OK" to save the settings.
+Using Command Line:
+Open Command Prompt as Administrator:
+Press Windows + X and select "Command Prompt (Admin)" or "Windows PowerShell (Admin)".
+Set the IP Address:
+powershell
+netsh interface ip set address name="Ethernet" static 192.168.1.100 255.255.255.0 192.168.1.1
+Replace "Ethernet" with the name of your network interface and adjust the IP address, subnet mask, and gateway as needed.
+Set DNS Server (Optional):
+powershell
+Copy code
+netsh interface ip set dns name="Ethernet" static 8.8.8.8
