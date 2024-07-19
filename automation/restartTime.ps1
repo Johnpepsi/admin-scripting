@@ -1,4 +1,4 @@
-# This script is to see when was the last time user restarted their machine
+# This script is to see when was the last time user restarted their machineee
 function Get-Uptime {
   [CmdletBinding()]
   param ()
