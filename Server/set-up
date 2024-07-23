@@ -5,4 +5,5 @@ Suggestions:
   There are many howtos online. Easy and secure, you can even add two factor authentication (recommend).
   RDP has many flaws and can be broken into.
 
-- Buying a device to use a VPN router, as it is pretty much more secured than setting up a Pi-VPN -- it has a lot of features where the device focuses in one thing.
+- Buying a Beryl AX to use a VPN router, as it is pretty much more secured than setting up a Pi-VPN -- it has a lot of features where the device focuses in one thing.
+- GL.iNet GL-MT3000 (Beryl AX) is more sufficient. Will get this today for $90, Raspberry pi would cost almost the same thing and would cost me time to set up OpenVPN or WireGuard.
