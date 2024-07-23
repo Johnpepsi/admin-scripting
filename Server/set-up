@@ -5,4 +5,4 @@ Suggestions:
   There are many howtos online. Easy and secure, you can even add two factor authentication (recommend).
   RDP has many flaws and can be broken into.
 
--use a PiVppn (openVPN)
+- Buying a device to use a VPN router, as it is pretty much more secured than setting up a Pi-VPN -- it has a lot of features where the device focuses in one thing.
