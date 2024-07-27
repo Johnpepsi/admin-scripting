@@ -1,6 +1,6 @@
 ## PowerShell script to ADD access for multiple users from Active Directory profiles
 
-# Import the Active Directory module
+# Import the Active Directory module for scripting
 Import-Module ActiveDirectory
 
 # List of users to grant access (replace with actual usernames)
