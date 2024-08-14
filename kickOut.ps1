@@ -1,3 +1,4 @@
+# This command shows how to kick a user out of the server.
 # Define the server name and username
 $serverName = "ServerName" #server
 $username = "Username" #username
