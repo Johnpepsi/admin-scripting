@@ -1,4 +1,4 @@
-#!/bin/bashsss
+#!/bin/bash
 
 # Variables
 SOURCE_DIR="/home/user/data"
