@@ -1,3 +1,6 @@
+# Adding account in Bulk to Active Directory, using the CSV File. 
+# To make it easier, find the OU of the Active Directory where all user will be stored at.
+
 # Import required modules 
 Import-module ActiveDirectory   
 # Create a new password 
