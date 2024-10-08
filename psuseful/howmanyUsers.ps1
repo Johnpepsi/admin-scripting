@@ -1,15 +1,13 @@
 #Import the Active Directory module
+Import-Module ActiveDirectory
 
->> Import-Module ActiveDirectory
->>
->> # Define the location you want to filter by
->> $location = "Tower Road/BTL"  # Replace with the name of your building/location
->>
->> # Get all users in the Active Directory, filter for enabled accounts, and the specified location
->> $activeUsers = Get-ADUser -Filter {Enabled -eq $true -and PhysicalDeliveryOfficeName -eq $location} -Properties Enabled, PhysicalDeliveryOfficeName
->>
->> # Count the number of active users
->> $activeUserCount = $activeUsers.Count
->>
->> # Output the count
->> Write-Host "Number of active users in $location: $activeUserCount"
+# Specify the Distinguished name (DN) of the OU want to search in
+$OU = "OUinACtiveDirectory,Specify-OU" 
+
+# Get all active users in the specified OU
+$activeUsers = Get-ADUsers -Filter {Enabled -eq $true} -SearchBase $OU
+# Count the number of active users
+$userCount = $activeUsers.Count
+
+# Output the count
+Write-Host "Number of active users in the OU '$OU': $userCount"
