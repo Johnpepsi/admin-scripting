@@ -1,5 +1,5 @@
 @echo off
-cd C:\Users\pjohn\Pictures\Screenshots
+cd C:%HomePath%\Pictures\Screenshots
 
 echo Are you sure you want to delete all PNG files? (Y/N)
 set /p choice=
